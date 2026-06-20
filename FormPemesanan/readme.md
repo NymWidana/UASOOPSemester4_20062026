@@ -1,4 +1,3 @@
-```markdown
 # 📦 Aplikasi Form Pemesanan Berbasis Java Swing & MySQL
 
 Aplikasi desktop manajemen transaksi pemesanan produk yang dibangun menggunakan bahasa pemrograman **Java (OOP)**, framework GUI **Java Swing**, dan sistem manajemen basis data **MySQL** melalui konektivitas **JDBC (Java Database Connectivity)**. Proyek ini dirancang untuk memenuhi standar penilaian praktikum Pemrograman Berorientasi Objek (PBO).
