@@ -38,13 +38,13 @@ Aplikasi ini menggunakan database bernama `pemesanan` dengan tabel bernama `pesa
 | Nama Kolom | Tipe Data | Atribut | Keterangan |
 | --- | --- | --- | --- |
 | `id` | INT | Primary Key, Auto Increment | ID Unik Pesanan |
-| `produk` | VARCHAR(100) | Not Null | Nama produk yang dipesan |
+| `produk` | VARCHAR(128) | Not Null | Nama produk yang dipesan |
 | `jumlah` | INT | Not Null | Kuantitas jumlah barang |
-| `harga` | DOUBLE | Not Null | Harga satuan produk |
-| `tipe` | VARCHAR(20) | Not Null | Metode pemesanan (Online / Offline) |
+| `harga` | DECIMAL(16, 2) | Not Null | Harga satuan produk |
+| `tipe` | ENUM (‘online’, ‘offline’) | Not Null | Metode pemesanan (Online / Offline) |
 | `tanggal` | DATE | Not Null | Tanggal masuk pesanan |
 | `deadline` | DATE | Not Null | Batas waktu penyelesaian |
-| `kategori` | VARCHAR(50) | Not Null | Kelompok kategori produk |
+| `kategori` | ENUM (‘elektronik’, ‘fashion’, ‘makanan’, ‘peralatan’) | Not Null | Kelompok kategori produk |
 
 ### Kueri SQL Pembuatan Tabel:
 
